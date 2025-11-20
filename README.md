@@ -19,40 +19,33 @@ Make sure you have the following installed:
 ```bash
 git clone https://github.com/<your-username>/<repo>.git
 cd <repo>
-2. Navigate to the backend directory and install the required Python packages:
-bash
-Copy code
+```
+### 2. Navigate to the backend directory and install the required Python packages:
+```bash
 cd backend
 pip install -r requirements.txt
-3. Navigate to the frontend directory and install the required Node.js packages:
-bash
-Copy code
+```
+### 3. Navigate to the frontend directory and install the required Node.js packages:
+```bash
 cd frontend
 npm install
-Configuration
+```
+## Configuration
 Create a .env file inside the backend directory and add your environment variables:
-
-ini
-Copy code
+```
 SUPABASE_URL=your_supabase_url
 SUPABASE_KEY=your_supabase_key
-ANTHROPIC_API_KEY=your_anthropic_api_key
-AZURE_STORAGE_CONNECTION_STRING=your_azure_storage_connection_string
-If you do not require any of these services, you may safely omit unused variables.
+```
 
-Running the Application
+## Running the Application
 Start the backend server:
-bash
-Copy code
+```bash
 cd backend
 uvicorn app.main:app --reload
+```
 Start the frontend development server:
-bash
-Copy code
+```bash
 cd frontend
 npm run dev
-Once both servers are running, open your browser and navigate to:
-
-http://localhost:5173
-
-to view the application.
+```
+Once both servers are running, open your browser and navigate to `http://localhost:3000` to view the application.
