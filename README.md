@@ -17,12 +17,14 @@ Make sure you have the following installed:
 ### 1. Clone the repository:
 
 ```bash
-git clone https://github.com/<your-username>/<repo>.git
-cd <repo>
+git clone https://github.com/choprapranay/moonshot.git
+cd moonshot
 ```
 ### 2. Navigate to the backend directory and install the required Python packages:
 ```bash
 cd backend
+python -m venv venv
+source venv/Scripts/activate
 pip install -r requirements.txt
 ```
 ### 3. Navigate to the frontend directory and install the required Node.js packages:
@@ -35,6 +37,11 @@ Create a .env file inside the backend directory and add your environment variabl
 ```
 SUPABASE_URL=your_supabase_url
 SUPABASE_KEY=your_supabase_key
+```
+
+Create a .env.local file inside the frontend directory and add your environment variables:
+```
+NEXT_PUBLIC_API_BASE_URL=http://127.0.0.1:8000
 ```
 
 ## Running the Application
